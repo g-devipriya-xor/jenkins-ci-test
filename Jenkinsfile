@@ -5,9 +5,9 @@ pipeline {
         NOTIFY_EMAIL = 'G.Devipriya@Xoriant.Com' // Email for notifications
     }
 
-    triggers {
+    #triggers {
         #pollSCM('H/5 * * * *') // Poll the GitHub repo every 5 minutes for changes
-    }
+    #}
 
     stages {
 
