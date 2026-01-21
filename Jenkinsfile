@@ -6,7 +6,7 @@ pipeline {
     }
 
     triggers {
-        pollSCM('H/5 * * * *') // Poll the GitHub repo every 5 minutes for changes
+        #pollSCM('H/5 * * * *') // Poll the GitHub repo every 5 minutes for changes
     }
 
     stages {
