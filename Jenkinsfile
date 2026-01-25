@@ -1,13 +1,13 @@
 pipeline {
-    agent { label 'agent1' }  // Run entire pipeline on the agent with this label
+    agent { label 'agent-1' }  // Run entire pipeline on the agent with this label
 
     environment {
         NOTIFY_EMAIL = 'G.Devipriya@Xoriant.Com' // Email for notifications
     }
 
-    #triggers {
-        #pollSCM('H/5 * * * *') // Poll the GitHub repo every 5 minutes for changes
-    #}
+    triggers {
+        pollSCM('H/5 * * * *') // Poll the GitHub repo every 5 minutes for changes
+    }
 
     stages {
 
